@@ -64,7 +64,7 @@ SNN相比于ANN，产生的脉冲是离散的，这有利于高效的通信。�
 .. code-block:: python
 
     plt.subplot(1, 2, 1)
-    firing_rate = np.mean(out_spikes, axis=1)
+    firing_rate = np.mean(out_spikes, axis=0)
     plt.plot(x, firing_rate)
     plt.title('Input $x_{i}$ and firing rate')
     plt.xlabel('Input $x_{i}$')
